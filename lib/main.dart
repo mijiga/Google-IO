@@ -50,17 +50,35 @@ class _MyHomePageState extends State<MyHomePage> {
           //Grocery
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-            width: MediaQuery.of(context).size.width,
             height: 50,
-            child: ElevatedButton(onPressed: (){
-              setState(() {
-                String newGrocery = _inputController.text.toString();
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SizedBox(
+                  height: 50,
+                  child: ElevatedButton(onPressed: (){
+                    String newGrocery = _inputController.text.toString();
 
-                if(newGrocery.isNotEmpty) {
-                  groceries.add(newGrocery);
-                }
-              });
-            }, child: const Text("Add New Item"),),
+                    if(newGrocery.isNotEmpty) {
+                      groceries.add(newGrocery);
+                    }
+
+                    _inputController.clear();
+                    setState(() {
+
+                    });
+                  }, child: const Text("Add New Item"),),
+                ),
+                SizedBox(
+                  height: 50,
+                  child: OutlinedButton(onPressed: (){
+                    setState(() {
+                      groceries.clear();
+                    });
+                  }, child: const Text("Clear List"),),
+                ),
+              ],
+            ),
           ),
           //ListOfGroceries
           Expanded(
