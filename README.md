@@ -1,16 +1,12 @@
-# gdsc_google_io
+# Demo: Grocery List App
 
-A new Flutter project.
+A demo app used in a presentation on getting started with Flutter
 
-## Getting Started
+## Context
 
-This project is a starting point for a Flutter application.
+The app is supposed to demontrate the concepts of Widgets and State Management in Flutter to a beginner.
+A project to quickly get your hands dirty with Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/mijiga/Google-IO/blob/main/screenshots/Screenshot_20220712-201209.jpg" data-canonical-src="https://github.com/mijiga/Google-IO/blob/main/screenshots/Screenshot_20220712-201209.jpg" width="200" height="400" />
